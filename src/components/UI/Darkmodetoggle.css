@@ -1,0 +1,70 @@
+/* Dark Mode Toggle Button - Fixed Top Left */
+
+.dark-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 6px 12px 6px 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.dark-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  border-color: #8b5a8e;
+}
+
+.toggle-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.toggle-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #282c3f;
+  letter-spacing: 0.3px;
+}
+
+/* Dark mode styles for the button itself */
+[data-theme="dark"] .dark-toggle {
+  background: #1e1e2e;
+  border-color: #444;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .toggle-label {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .dark-toggle:hover {
+  border-color: #d4a574;
+}
+
+/* Mobile - smaller */
+@media (max-width: 768px) {
+  .dark-toggle {
+    top: 12px;
+    left: 12px;
+    padding: 5px 10px 5px 7px;
+  }
+
+  .toggle-label {
+    display: none; /* Just icon on mobile */
+  }
+
+  .toggle-icon {
+    font-size: 18px;
+  }
+}
