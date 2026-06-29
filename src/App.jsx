@@ -20,7 +20,7 @@ import NotFound from "./pages/NotFound";
 
 
 import "./App.css";
-import DarkmodeToggle from "./components/UI/Darkmodetoggle";
+import DarkModeToggle from "./components/UI/DarkModetoggle";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
       <CartProvider>
         <WishlistProvider>
           <Router>
-            <DarkmodeToggle />
+            <DarkModeToggle />
             <div className="app">
               <Navbar />
               <main className="main-content">
