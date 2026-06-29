@@ -20,7 +20,7 @@ import NotFound from "./pages/NotFound";
 
 
 import "./App.css";
-import DarkModeToggle from "./components/UI/DarkModetoggle";
+import DarkModeToggle from "./components/UI/DarkModeToggle";
 
 function App() {
   return (
